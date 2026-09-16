@@ -1,4 +1,4 @@
-# Wedding Invitation Website: Chika Agatha & Noble-Gold Chukwubuikem
+# Wedding Invitation Website: Chika Agatha & Noble-Gold Chukwubuikem (UgoChi)
 
 An interactive, responsive digital wedding invitation website celebrating the **Solemnization of Holy Matrimony & Traditional Marriage** of **Chika Agatha** and **Noble-Gold Chukwubuikem** in Enugu, Nigeria.
 
@@ -30,26 +30,25 @@ Designed with inspiration from the couple's official royal invitation card and d
 3. **Live Countdown Timer:**
    - Real-time days, hours, minutes, and seconds remaining until Saturday, 21st November 2026, 10:00 AM WAT.
 
-4. **Event Details & Direct Actions:**
+4. **Our Wedding Section with Photo Backdrop:**
+   - Atmospheric full-width backdrop featuring portrait **image 9133** behind a frosted glassmorphic proclamation card.
+   - Proclamation honoring the parents of the bride and groom.
+
+5. **Event Details & Direct Actions:**
    - Dedicated cards for Holy Matrimony and Reception/Traditional Marriage.
    - One-tap **Google Maps** directions.
    - **Google Calendar** direct event link + downloadable `.ics` iCalendar file for Apple Calendar, Outlook, and Android.
 
-5. **Colours of the Day Showcase:**
+6. **Colours of the Day Showcase:**
    - Color chips for Gold, Peach, Burnt Orange, and Purple with cultural symbolism and hex codes.
 
-6. **Interactive Memories & Gallery Lightbox:**
-   - Responsive photo grid with the couple's portraits and royal invitation card artwork.
+7. **Interactive Memories & Gallery Lightbox:**
+   - Curated 8-photo responsive gallery featuring the couple's pre-wedding & engagement portraits and royal monogram art.
    - Fullscreen lightbox modal with keyboard navigation (Esc, Left, Right) and mobile touch-swipe support.
-
-7. **RSVP System:**
-   - Name, attendance status (*Joyfully Accepts* / *Regretfully Declines*), guest count, events attending, and congratulatory message.
-   - Client-side persistence in `localStorage`.
-   - Direct **WhatsApp RSVP** button formatting guest responses into a WhatsApp message for the couple.
-   - Confetti celebration modal upon submission.
 
 8. **Share & Guest Actions:**
    - Mobile Web Share API integration with automatic fallback share modal (WhatsApp direct share & Copy link).
+   - Direct WhatsApp message link to contact the couple.
 
 ---
 
@@ -58,8 +57,7 @@ All customizable details are centralized in [`assets/js/config.js`](assets/js/co
 
 - **Couple Details:** Names, parentage, phone numbers, contact email.
 - **Venues & Coordinates:** Google Maps links, event timings.
-- **RSVP Webhook:** Set `WEDDING_CONFIG.rsvp.endpointUrl` to your Formspree, Google Sheets, or backend API URL.
-- **WhatsApp Recipient:** Set `WEDDING_CONFIG.rsvp.whatsappRecipient` to the desired Nigerian or international phone number (e.g., `+2348030000000`).
+- **WhatsApp Recipient:** Set `WEDDING_CONFIG.couple.whatsappContact` to the desired Nigerian or international phone number (e.g., `+2348030000000`).
 
 ---
 
@@ -77,5 +75,5 @@ Then visit `http://localhost:8080` (or `http://localhost:3000`).
 
 ## 🌐 Deployment
 Hosted on **GitHub Pages**:
-- **Repository:** https://github.com/UCNGolden/chika-noble-gold-wedding
-- **Live Website:** https://ucngolden.github.io/chika-noble-gold-wedding/
+- **Repository:** https://github.com/UCNGolden/UgoChi-wedding-invitation
+- **Live Website:** https://ucngolden.github.io/UgoChi-wedding-invitation/

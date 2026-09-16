@@ -1,5 +1,6 @@
-﻿/**
+/**
  * Interactive Gallery & Lightbox for Chika & Noble-Gold's Wedding
+ * Updated with full pre-wedding & engagement collection
  */
 const GALLERY_ITEMS = [
   {
@@ -8,19 +9,39 @@ const GALLERY_ITEMS = [
     caption: "Chika Agatha & Noble-Gold Chukwubuikem — A journey of eternal love and divine togetherness."
   },
   {
+    src: "assets/images/couple-shoulder-rest.jpg",
+    title: "Tender Serenade",
+    caption: "Quiet peace and unshakable comfort found in each other's embrace."
+  },
+  {
+    src: "assets/images/couple-shoe.jpg",
+    title: "Gentle Devotion",
+    caption: "A covenant of humility, chivalry, and tender care through every step of life."
+  },
+  {
+    src: "assets/images/couple-embrace-back.jpg",
+    title: "Forever in Your Arms",
+    caption: "Radiant smiles, laughter, and an unbreakable bond of friendship."
+  },
+  {
+    src: "assets/images/couple-traditional-holding-hands.jpg",
+    title: "Hand in Hand, Heart to Heart",
+    caption: "Walking into forever, anchored in deep faith and rich cultural heritage."
+  },
+  {
     src: "assets/images/couple-standing.jpg",
     title: "Regal Elegance & Harmony",
-    caption: "Radiant in cultural splendor and modern grace as they prepare to unite as one."
+    caption: "Traditional splendour and modern grace as they prepare to unite as one."
+  },
+  {
+    src: "assets/images/image-9133.jpg",
+    title: "United in Grace",
+    caption: "Noble-Gold & Chika Agatha — Poised in timeless royal elegance."
   },
   {
     src: "assets/images/card-cover.jpg",
     title: "The Royal Wedding Emblem",
     caption: "Official Monogram 'NC' and invitation cover in regal purple and gold."
-  },
-  {
-    src: "assets/images/card-details.jpg",
-    title: "Solemnization & Family Proclamation",
-    caption: "The sacred announcement from the Jideofor & Ederogun/Ugochukwu families."
   }
 ];
 
