@@ -46,18 +46,13 @@ Designed with inspiration from the couple's official royal invitation card and d
    - Curated 8-photo responsive gallery featuring the couple's pre-wedding & engagement portraits and royal monogram art.
    - Fullscreen lightbox modal with keyboard navigation (Esc, Left, Right) and mobile touch-swipe support.
 
-8. **Share & Guest Actions:**
-   - Mobile Web Share API integration with automatic fallback share modal (WhatsApp direct share & Copy link).
-   - Direct WhatsApp message link to contact the couple.
-
 ---
 
 ## ⚙️ Configuration & Customization
 All customizable details are centralized in [`assets/js/config.js`](assets/js/config.js):
 
-- **Couple Details:** Names, parentage, phone numbers, contact email.
+- **Couple Details:** Names, parentage.
 - **Venues & Coordinates:** Google Maps links, event timings.
-- **WhatsApp Recipient:** Set `WEDDING_CONFIG.couple.whatsappContact` to the desired Nigerian or international phone number (e.g., `+2348030000000`).
 
 ---
 

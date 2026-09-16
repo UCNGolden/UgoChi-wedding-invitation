@@ -3,7 +3,6 @@
  * Features:
  * - Envelope Opening Entrance Experience
  * - Calendar Integration (.ics & Google Calendar)
- * - Share Modal & Web Share API
  * - Mobile Navigation & Smooth Scroll
  * - Intersection Observer Reveal Animations
  */
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initEnvelopeExperience();
   initNavigation();
   initCalendarIntegrations();
-  initShareFeatures();
   initScrollAnimations();
 });
 
@@ -159,84 +157,7 @@ function downloadIcsFile(title, description, location) {
 }
 
 /* ----------------------------------------------------
-   4. SHARE FEATURES & MODAL
----------------------------------------------------- */
-function initShareFeatures() {
-  const shareTriggerBtns = document.querySelectorAll(".btn-share-invitation");
-  const shareModal = document.getElementById("share-modal");
-  const shareCloseBtn = document.getElementById("share-modal-close");
-  const copyBtn = document.getElementById("share-copy-link-btn");
-  const copyNotice = document.getElementById("share-copy-status");
-  const whatsappShareBtn = document.getElementById("share-whatsapp-btn");
-
-  const shareTitle = "Wedding Invitation: Chika & Noble-Gold";
-  const shareText = "You are cordially invited to the Solemnization of Holy Matrimony & Traditional Marriage of Chika Agatha & Noble-Gold Chukwubuikem on Saturday, 21st November 2026 in Enugu.";
-  const shareUrl = window.location.href;
-
-  if (whatsappShareBtn) {
-    whatsappShareBtn.href = `https://wa.me/?text=${encodeURIComponent(shareTitle + "\n" + shareText + "\n\n" + shareUrl)}`;
-  }
-
-  shareTriggerBtns.forEach(btn => {
-    btn.addEventListener("click", async (e) => {
-      e.preventDefault();
-      if (navigator.share) {
-        try {
-          await navigator.share({
-            title: shareTitle,
-            text: shareText,
-            url: shareUrl
-          });
-          return;
-        } catch (err) {
-          // Fallback to modal
-        }
-      }
-
-      if (shareModal) {
-        shareModal.classList.add("active");
-      }
-    });
-  });
-
-  if (shareCloseBtn && shareModal) {
-    shareCloseBtn.addEventListener("click", () => {
-      shareModal.classList.remove("active");
-    });
-  }
-
-  if (shareModal) {
-    shareModal.addEventListener("click", (e) => {
-      if (e.target === shareModal) {
-        shareModal.classList.remove("active");
-      }
-    });
-  }
-
-  if (copyBtn) {
-    copyBtn.addEventListener("click", () => {
-      navigator.clipboard.writeText(shareUrl).then(() => {
-        if (copyNotice) {
-          copyNotice.style.display = "block";
-          setTimeout(() => {
-            copyNotice.style.display = "none";
-          }, 3000);
-        }
-      }).catch(() => {
-        const dummy = document.createElement("input");
-        document.body.appendChild(dummy);
-        dummy.value = shareUrl;
-        dummy.select();
-        document.execCommand("copy");
-        document.body.removeChild(dummy);
-        if (copyNotice) copyNotice.style.display = "block";
-      });
-    });
-  }
-}
-
-/* ----------------------------------------------------
-   5. INTERSECTION OBSERVER SCROLL ANIMATIONS
+   4. INTERSECTION OBSERVER SCROLL ANIMATIONS
 ---------------------------------------------------- */
 function initScrollAnimations() {
   const elements = document.querySelectorAll(".reveal-on-scroll");
