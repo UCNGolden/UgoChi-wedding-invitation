@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120" fill="none">
+  <defs>
+    <linearGradient id="calabashGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D47A2B"/>
+      <stop offset="40%" stop-color="#A04000"/>
+      <stop offset="80%" stop-color="#6E2C00"/>
+      <stop offset="100%" stop-color="#4D1C00"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9E79F"/>
+      <stop offset="100%" stop-color="#B78628"/>
+    </linearGradient>
+  </defs>
+  <path d="M50 35 C42 35 32 45 28 60 C22 80 30 110 50 110 C70 110 78 80 72 60 C68 45 58 35 50 35 Z" fill="url(#calabashGrad)"/>
+  <path d="M47 15 C46 22 45 28 47 36 C50 36 53 36 53 36 C55 28 54 22 53 15 Z" fill="url(#calabashGrad)"/>
+  <ellipse cx="50" cy="15" rx="5" ry="2.5" fill="url(#goldAccent)"/>
+  <ellipse cx="50" cy="35" rx="8" ry="3" stroke="url(#goldAccent)" stroke-width="2" fill="none"/>
+  <ellipse cx="50" cy="70" rx="5" ry="8" fill="#FFFDD0" stroke="#8B4513" stroke-width="1"/>
+  <line x1="50" y1="64" x2="50" y2="76" stroke="#8B4513" stroke-width="1.5" stroke-dasharray="1 2"/>
+  <path d="M38 58 C35 70 38 88 42 98" stroke="rgba(255,255,255,0.25)" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

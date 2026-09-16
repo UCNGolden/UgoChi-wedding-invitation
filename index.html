@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chika Agatha & Noble-Gold Chukwubuikem | Wedding Invitation</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Chika Agatha & Noble-Gold Chukwubuikem | Wedding Invitation">
+  <meta name="description" content="Solemnization of Holy Matrimony and Traditional Marriage of Chika Agatha & Noble-Gold Chukwubuikem on Saturday, 21st November 2026 in Enugu, Nigeria.">
+  <meta name="theme-color" content="#4E1856">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ucngolden.github.io/chika-noble-gold-wedding/">
+  <meta property="og:title" content="Chika Agatha & Noble-Gold Chukwubuikem | Wedding Invitation">
+  <meta property="og:description" content="You are cordially invited to celebrate the union of Chika & Noble-Gold on Saturday, 21st November 2026 in Enugu.">
+  <meta property="og:image" content="assets/images/card-cover.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Chika Agatha & Noble-Gold Chukwubuikem | Wedding Invitation">
+  <meta property="twitter:description" content="You are cordially invited to celebrate the union of Chika & Noble-Gold on Saturday, 21st November 2026 in Enugu.">
+  <meta property="twitter:image" content="assets/images/card-cover.jpg">
+
+  <!-- Favicon / Icon -->
+  <link rel="icon" type="image/png" href="assets/images/monogram.png">
+  <link rel="apple-touch-icon" href="assets/images/monogram.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body class="envelope-locked">
+
+  <!-- Canvas for Floating Gold Sparkles & Soft Petals -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ==========================================================================
+       1. ENVELOPE / OPENING SCREEN EXPERIENCE
+       ========================================================================== -->
+  <div id="envelope-entrance-screen" class="envelope-screen" aria-modal="true" role="dialog">
+    <div class="envelope-card reveal-on-scroll revealed">
+      <div class="envelope-monogram-ring">
+        <img src="assets/images/monogram.png" alt="Noble & Chika Monogram">
+      </div>
+      <p class="envelope-subtitle">You Are Cordially Invited</p>
+      <h1 class="envelope-couple-names">Chika & Noble-Gold</h1>
+      <div class="envelope-date-pill">Saturday, 21st November, 2026</div>
+      <button id="open-invitation-btn" class="envelope-cta-btn" type="button">
+        <span>✨ Open Invitation</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. FLOATING AUDIO CONTROLLER
+       ========================================================================== -->
+  <aside class="floating-audio-widget" aria-label="Audio Controls">
+    <button id="audio-toggle-btn" class="audio-toggle-btn" type="button" aria-label="Toggle Wedding Music" title="Play/Pause Romantic Wedding Music">
+      <div class="audio-equalizer">
+        <span class="audio-wave-bar"></span>
+        <span class="audio-wave-bar"></span>
+        <span class="audio-wave-bar"></span>
+        <span class="audio-wave-bar"></span>
+      </div>
+    </button>
+  </aside>
+
+  <!-- Content Wrapper -->
+  <div class="site-content-wrapper">
+
+    <!-- ==========================================================================
+         3. NAVIGATION BAR
+         ========================================================================== -->
+    <header id="main-navbar" class="main-navbar">
+      <div class="container navbar-inner">
+        <a href="#hero" class="nav-brand" aria-label="Chika and Noble-Gold Home">
+          <div class="nav-brand-logo">
+            <img src="assets/images/monogram.png" alt="NC Monogram">
+          </div>
+          <span class="nav-brand-title">Chika & Noble-Gold</span>
+        </a>
+
+        <button id="nav-toggle-btn" class="nav-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#our-wedding" class="nav-link">Our Wedding</a></li>
+            <li><a href="#events" class="nav-link">Events</a></li>
+            <li><a href="#timeline" class="nav-link">Timeline</a></li>
+            <li><a href="#colours" class="nav-link">Colours</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#programme" class="nav-link">Information</a></li>
+            <li><a href="#rsvp" class="btn btn-gold btn-sm">RSVP Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         4. HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-monogram reveal-on-scroll">
+          <img src="assets/images/monogram.png" alt="Couple's Monogram NC">
+        </div>
+
+        <p class="hero-pretitle reveal-on-scroll delay-1">The Wedding Celebration of</p>
+
+        <h1 class="hero-couple-names reveal-on-scroll delay-1">
+          Chika Agatha <span class="hero-couple-ampersand">&</span> Noble-Gold
+        </h1>
+
+        <div>
+          <span class="hero-theme-badge reveal-on-scroll delay-2">Holy Matrimony & Traditional Marriage</span>
+        </div>
+
+        <div class="hero-date-banner reveal-on-scroll delay-2">
+          <span>Saturday, 21st November, 2026 • Enugu, Nigeria</span>
+        </div>
+
+        <!-- Live Countdown Widget -->
+        <div class="hero-countdown-box reveal-on-scroll delay-3">
+          <div class="countdown-grid">
+            <div class="countdown-item">
+              <span id="countdown-days" class="countdown-number">00</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-item">
+              <span id="countdown-hours" class="countdown-number">00</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-item">
+              <span id="countdown-minutes" class="countdown-number">00</span>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+              <span id="countdown-seconds" class="countdown-number">00</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
+          </div>
+          <p id="countdown-status" style="font-size: 0.88rem; color: var(--color-purple); margin-top: 1rem; font-weight: 500;">Counting down to our blessed celebration</p>
+        </div>
+
+        <div class="hero-cta-group reveal-on-scroll delay-4">
+          <a href="#rsvp" class="btn btn-gold">💌 Confirm Attendance (RSVP)</a>
+          <a href="#" class="btn btn-outline-gold btn-google-calendar" target="_blank" rel="noopener">📅 Add to Calendar</a>
+          <button type="button" class="btn btn-purple btn-share-invitation">📤 Share Invitation</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. OUR WEDDING / SOLEMNIZATION PROCLAMATION
+         ========================================================================== -->
+    <section id="our-wedding" class="section-padding">
+      <div class="container container-narrow">
+        <div class="section-title-wrap reveal-on-scroll">
+          <span class="section-subtitle">With Joy in Our Hearts</span>
+          <h2 class="section-title">The Solemnization</h2>
+          <div class="section-flourish">
+            <img src="assets/images/floral-decor.svg" alt="Gold flourish decor">
+          </div>
+        </div>
+
+        <div class="our-wedding-card reveal-on-scroll delay-1">
+          <p class="proclamation-header">Together with our beloved families</p>
+
+          <div class="proclamation-parents">
+            <div class="family-block">
+              <div class="family-name">MR & MRS VINCENT JIDEOFOR</div>
+              <div class="family-origin">of Obelagu Umana, Ezeagu L.G.A, Enugu State</div>
+            </div>
+
+            <div class="family-separator">&</div>
+
+            <div class="family-block">
+              <div class="family-name">LATE MR BENJAMIN AZAGBA EDEROGUN<br>& MS JOSEPHINE UTOH UGOCHUKWU</div>
+              <div class="family-origin">of Jakpa, Warri North L.G.A, Delta State</div>
+            </div>
+          </div>
+
+          <p class="proclamation-invite">
+            Cordially invite you to the solemnization of
+          </p>
+
+          <div class="proclamation-solemnization">SOLEMNIZATION OF</div>
+          <div class="proclamation-celebration-type">Holy Matrimony & Traditional Marriage</div>
+
+          <p style="font-size: 1.05rem; color: var(--color-text-muted); font-style: italic;">of their children</p>
+
+          <div class="proclamation-couple-box">
+            <div class="proclamation-couple-bride">CHIKA AGATHA</div>
+            <div class="proclamation-couple-ampersand">&</div>
+            <div class="proclamation-couple-groom">NOBLE-GOLD CHUKWUBUIKEM</div>
+          </div>
+
+          <p style="font-size: 1.05rem; color: var(--color-text-muted); line-height: 1.7; max-width: 620px; margin: 0 auto;">
+            As two souls join hands under the divine grace of God and the rich cultural heritage of our ancestors, your presence and prayers will make this joyous milestone complete.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. EVENT DETAILS (HOLY MATRIMONY & TRADITIONAL RECEPTION)
+         ========================================================================== -->
+    <section id="events" class="section-padding" style="background: rgba(255, 255, 255, 0.5);">
+      <div class="container">
+        <div class="section-title-wrap reveal-on-scroll">
+          <span class="section-subtitle">Where & When</span>
+          <h2 class="section-title">Wedding Events</h2>
+          <div class="section-flourish">
+            <img src="assets/images/floral-decor.svg" alt="Gold flourish decor">
+          </div>
+        </div>
+
+        <div class="events-grid">
+          <!-- Event 1: Church Service -->
+          <article class="event-card reveal-on-scroll delay-1">
+            <div class="event-icon-circle">
+              <img src="assets/images/rings.svg" alt="Intertwined Gold Wedding Rings">
+            </div>
+            <span class="event-category">Church Service</span>
+            <h3 class="event-name">Holy Matrimony</h3>
+
+            <ul class="event-meta-list">
+              <li class="event-meta-item">
+                <span class="event-meta-icon">📅</span>
+                <span><strong>Saturday, 21st November, 2026</strong></span>
+              </li>
+              <li class="event-meta-item">
+                <span class="event-meta-icon">⏰</span>
+                <span><strong>10:00 AM Prompt</strong></span>
+              </li>
+              <li class="event-meta-item">
+                <span class="event-meta-icon">⛪</span>
+                <span><strong>Our Lady of Lourdes Parish</strong><br>Maryland, Enugu</span>
+              </li>
+            </ul>
+
+            <div class="event-actions">
+              <a href="https://www.google.com/maps/search/?api=1&query=Our+Lady+of+Lourdes+Parish+Maryland+Enugu" class="btn btn-gold" target="_blank" rel="noopener">
+                📍 Get Directions (Google Maps)
+              </a>
+              <a href="#" class="btn btn-outline-gold btn-google-calendar" target="_blank" rel="noopener">
+                📅 Add Church Event to Calendar
+              </a>
+            </div>
+          </article>
+
+          <!-- Event 2: Traditional Marriage & Reception -->
+          <article class="event-card reveal-on-scroll delay-2">
+            <div class="event-icon-circle">
+              <img src="assets/images/calabash.svg" alt="Traditional Palm Wine Calabash">
+            </div>
+            <span class="event-category">Traditional Rites & Nuptial Banquet</span>
+            <h3 class="event-name">Reception & Traditional Marriage</h3>
+
+            <ul class="event-meta-list">
+              <li class="event-meta-item">
+                <span class="event-meta-icon">📅</span>
+                <span><strong>Saturday, 21st November, 2026</strong></span>
+              </li>
+              <li class="event-meta-item">
+                <span class="event-meta-icon">⏰</span>
+                <span><strong>Immediately After Church Service</strong></span>
+              </li>
+              <li class="event-meta-item">
+                <span class="event-meta-icon">🏡</span>
+                <span><strong>Jideofor's Family Compound</strong><br>Obelagu Umana, Ezeagu L.G.A, Enugu State</span>
+              </li>
+            </ul>
+
+            <div class="event-actions">
+              <a href="https://www.google.com/maps/search/?api=1&query=Obelagu+Umana+Ezeagu+Enugu+State" class="btn btn-purple" target="_blank" rel="noopener">
+                📍 Get Directions to Reception
+              </a>
+              <a href="#" class="btn btn-outline-gold btn-ics-calendar">
+                📥 Download iCal (.ics) Event
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. WEDDING TIMELINE
+         ========================================================================== -->
+    <section id="timeline" class="section-padding">
+      <div class="container">
+        <div class="section-title-wrap reveal-on-scroll">
+          <span class="section-subtitle">Order of the Day</span>
+          <h2 class="section-title">Wedding Timeline</h2>
+          <div class="section-flourish">
+            <img src="assets/images/floral-decor.svg" alt="Gold flourish decor">
+          </div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-node"></div>
+            <span class="timeline-time-badge">09:30 AM</span>
+            <h3 class="timeline-title">Arrival of Guests</h3>
+            <p class="timeline-desc">Guests seated in quiet reflection and prayer at Our Lady of Lourdes Parish, Maryland, Enugu.</p>
+          </div>
+
+          <div class="timeline-item reveal-on-scroll delay-1">
+            <div class="timeline-node"></div>
+            <span class="timeline-time-badge">10:00 AM</span>
+            <h3 class="timeline-title">Solemnization of Holy Matrimony</h3>
+            <p class="timeline-desc">Bridal Procession, Exchange of Nuptial Vows, Holy Mass, Ring Blessing, and Nuptial Blessing.</p>
+          </div>
+
+          <div class="timeline-item reveal-on-scroll delay-2">
+            <div class="timeline-node"></div>
+            <span class="timeline-time-badge">12:30 PM</span>
+            <h3 class="timeline-title">Traditional Marriage Rites</h3>
+            <p class="timeline-desc">Cultural procession, formal greetings, Wine-carrying ceremony (Igba Nkwu), and parental blessings.</p>
+          </div>
+
+          <div class="timeline-item reveal-on-scroll delay-3">
+            <div class="timeline-node"></div>
+            <span class="timeline-time-badge">02:00 PM</span>
+            <h3 class="timeline-title">Nuptial Banquet & Feast</h3>
+            <p class="timeline-desc">Sumptuous feast featuring classic delicacies, refreshments, and joyful hospitality at Jideofor's Compound.</p>
+          </div>
+
+          <div class="timeline-item reveal-on-scroll delay-1">
+            <div class="timeline-node"></div>
+            <span class="timeline-time-badge">03:30 PM</span>
+            <h3 class="timeline-title">Cutting of Cake & First Dance</h3>
+            <p class="timeline-desc">Cutting of the royal wedding cake, solemn champagne toast, and the couple's magical first dance.</p>
+          </div>
+
+          <div class="timeline-item reveal-on-scroll delay-2">
+            <div class="timeline-node"></div>
+            <span class="timeline-time-badge">04:30 PM</span>
+            <h3 class="timeline-title">Celebration & Dance Floor Opens</h3>
+            <p class="timeline-desc">High-energy African rhythms, couple money-spray celebration, photographs, and evening merriment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. COLOURS OF THE DAY
+         ========================================================================== -->
+    <section id="colours" class="section-padding" style="background: rgba(255, 255, 255, 0.6);">
+      <div class="container container-narrow">
+        <div class="section-title-wrap reveal-on-scroll">
+          <span class="section-subtitle">Aso-Ebi & Dress Code</span>
+          <h2 class="section-title">Colours of the Day</h2>
+          <div class="section-flourish">
+            <img src="assets/images/floral-decor.svg" alt="Gold flourish decor">
+          </div>
+        </div>
+
+        <div class="colors-showcase-box reveal-on-scroll delay-1">
+          <p style="text-align: center; color: var(--color-text-muted); font-size: 1.05rem; max-width: 600px; margin: 0 auto;">
+            We encourage our esteemed friends and family to don these vibrant, harmonious colours as we commemorate our sacred and cultural covenant.
+          </p>
+
+          <div class="colors-grid">
+            <div class="color-swatch-card">
+              <div class="color-chip" style="background: #D4AF37;"></div>
+              <h4 class="color-name">Gold</h4>
+              <div class="color-code">#D4AF37</div>
+              <p class="color-desc">Symbolizing timeless majesty, prosperity, and divine joy.</p>
+            </div>
+
+            <div class="color-swatch-card">
+              <div class="color-chip" style="background: #F8C1A0;"></div>
+              <h4 class="color-name">Peach</h4>
+              <div class="color-code">#F8C1A0</div>
+              <p class="color-desc">Symbolizing sweetness, warmth, and tender new beginnings.</p>
+            </div>
+
+            <div class="color-swatch-card">
+              <div class="color-chip" style="background: #CC5500;"></div>
+              <h4 class="color-name">Burnt Orange</h4>
+              <div class="color-code">#CC5500</div>
+              <p class="color-desc">Symbolizing rich cultural heritage, vitality, and passion.</p>
+            </div>
+
+            <div class="color-swatch-card">
+              <div class="color-chip" style="background: #63276D;"></div>
+              <h4 class="color-name">Purple</h4>
+              <div class="color-code">#63276D</div>
+              <p class="color-desc">Symbolizing regal dignity, spiritual unity, and grace.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. GALLERY / MEMORIES
+         ========================================================================== -->
+    <section id="gallery" class="section-padding">
+      <div class="container">
+        <div class="section-title-wrap reveal-on-scroll">
+          <span class="section-subtitle">Moments of Grace</span>
+          <h2 class="section-title">Gallery & Memories</h2>
+          <div class="section-flourish">
+            <img src="assets/images/floral-decor.svg" alt="Gold flourish decor">
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Image 1 -->
+          <div class="gallery-item reveal-on-scroll">
+            <img src="assets/images/couple-kiss.jpg" alt="Noble-Gold kissing Chika Agatha lovingly" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-overlay-title">Sealed With a Loving Kiss</h4>
+              <p class="gallery-overlay-sub">Noble-Gold & Chika — An eternal bond anchored in deep devotion.</p>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="gallery-item reveal-on-scroll delay-1">
+            <img src="assets/images/couple-standing.jpg" alt="Chika and Noble-Gold smiling in beautiful attire" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-overlay-title">Regal Elegance & Harmony</h4>
+              <p class="gallery-overlay-sub">Radiant smiles and timeless cultural grace as they stand together.</p>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="gallery-item reveal-on-scroll delay-2">
+            <img src="assets/images/card-cover.jpg" alt="Royal Wedding Invitation Monogram NC" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-overlay-title">The Royal Monogram</h4>
+              <p class="gallery-overlay-sub">The official monogram emblem and invitation cover art.</p>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="gallery-item reveal-on-scroll delay-3">
+            <img src="assets/images/card-details.jpg" alt="Official Wedding Announcement Details" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-overlay-title">Solemnization Proclamation</h4>
+              <p class="gallery-overlay-sub">The family invitation and vows proclamation card.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. TOAST / LOVE QUOTE SECTION
+         ========================================================================== -->
+    <section class="toast-section">
+      <div class="container toast-quote-wrap">
+        <span class="toast-quote-mark">“</span>
+        <blockquote class="toast-quote-text reveal-on-scroll">
+          Time bends, but never breaks. Space stretches, yet never tears. Matter changes shape, but never truly leaves and so it is with us — through every season, every shift, every unknown, one truth holds, unmoving, unshaken — Our Love. Our Love, to Infinity
+        </blockquote>
+        <cite class="toast-signature reveal-on-scroll delay-1">
+          Chika Agatha & Noble-Gold
+        </cite>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. RSVP SECTION
+         ========================================================================== -->
+    <section id="rsvp" class="section-padding">
+      <div class="container">
+        <div class="section-title-wrap reveal-on-scroll">
+          <span class="section-subtitle">Be Our Guest</span>
+          <h2 class="section-title">RSVP to Celebrate</h2>
+          <div class="section-flourish">
+            <img src="assets/images/floral-decor.svg" alt="Gold flourish decor">
+          </div>
+        </div>
+
+        <div class="rsvp-card-wrapper reveal-on-scroll delay-1">
+          <!-- Existing RSVP notification if already filled -->
+          <div id="existing-rsvp-notice" style="display: none;"></div>
+
+          <form id="wedding-rsvp-form" class="rsvp-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="guest-name">Full Name(s) *</label>
+              <input type="text" id="guest-name" name="guest-name" class="form-input" placeholder="e.g. Chief & Mrs. Emeka Okonkwo" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="guest-phone">Phone / WhatsApp Number</label>
+              <input type="tel" id="guest-phone" name="guest-phone" class="form-input" placeholder="e.g. +234 803 123 4567">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="guest-email">Email Address (Optional)</label>
+              <input type="email" id="guest-email" name="guest-email" class="form-input" placeholder="e.g. guest@example.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Will you be attending? *</label>
+              <div class="attendance-options-grid">
+                <label class="attendance-radio-label">
+                  <input type="radio" name="guest-attendance" value="yes" checked>
+                  <span class="radio-text">🎉 Joyfully Accepts</span>
+                </label>
+                <label class="attendance-radio-label">
+                  <input type="radio" name="guest-attendance" value="no">
+                  <span class="radio-text">💌 Regretfully Declines</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="guest-count">Number of Guests Attending</label>
+              <select id="guest-count" name="guest-count" class="form-select">
+                <option value="1">1 Person (Just me)</option>
+                <option value="2">2 Persons (Couple)</option>
+                <option value="3">3 Persons</option>
+                <option value="4">4 Persons</option>
+                <option value="5+">5+ Persons (Family delegation)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="guest-events">Events You Will Attend</label>
+              <select id="guest-events" name="guest-events" class="form-select">
+                <option value="both">Both Holy Matrimony & Traditional Reception</option>
+                <option value="church">Church Service (Holy Matrimony) Only</option>
+                <option value="reception">Reception & Traditional Marriage Only</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="guest-message">Congratulatory Message / Well Wishes for the Couple</label>
+              <textarea id="guest-message" name="guest-message" class="form-textarea" rows="4" placeholder="Share your warm thoughts and prayers with Chika & Noble-Gold..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 1.1rem; font-size: 1.05rem;">
+              💌 Submit RSVP Confirmation
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. WEDDING PROGRAMME & GUEST INFORMATION
+         ========================================================================== -->
+    <section id="programme" class="section-padding" style="background: rgba(255, 255, 255, 0.6);">
+      <div class="container">
+        <div class="section-title-wrap reveal-on-scroll">
+          <span class="section-subtitle">Good to Know</span>
+          <h2 class="section-title">Guest Information</h2>
+          <div class="section-flourish">
+            <img src="assets/images/floral-decor.svg" alt="Gold flourish decor">
+          </div>
+        </div>
+
+        <div class="info-cards-grid">
+          <div class="info-card reveal-on-scroll">
+            <div class="info-card-icon">👑</div>
+            <h3 class="info-card-title">Dress Code & Style</h3>
+            <p class="info-card-text">
+              Formal Traditional / Black Tie elegance. Our colors of the day are Gold, Peach, Burnt Orange, and Purple. Come adorned in radiant African traditional glam or classic evening attire.
+            </p>
+          </div>
+
+          <div class="info-card reveal-on-scroll delay-1">
+            <div class="info-card-icon">🚗</div>
+            <h3 class="info-card-title">Travel & Parking</h3>
+            <p class="info-card-text">
+              Parking is available at both Our Lady of Lourdes Parish in Maryland, Enugu, and Jideofor's Family Compound in Obelagu Umana, Ezeagu. Security marshals will guide arriving vehicles.
+            </p>
+          </div>
+
+          <div class="info-card reveal-on-scroll delay-2">
+            <div class="info-card-icon">🎁</div>
+            <h3 class="info-card-title">Gifts & Blessings</h3>
+            <p class="info-card-text">
+              Your prayers, warm presence, and love on our special day are the greatest gifts of all. A bridal registry box will also be available at the reception venue for tokens of goodwill.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         13. CLOSING SECTION & FOOTER
+         ========================================================================== -->
+    <footer class="footer-closing-section">
+      <div class="container">
+        <div class="footer-monogram reveal-on-scroll">
+          <img src="assets/images/monogram.png" alt="NC Monogram">
+        </div>
+
+        <h2 class="footer-couple-names reveal-on-scroll delay-1">Chika & Noble-Gold</h2>
+
+        <p class="footer-thank-you reveal-on-scroll delay-2">
+          "Thank you for being part of our story, our joy, and our forever covenant."
+        </p>
+
+        <div class="footer-date-pill reveal-on-scroll delay-2">
+          Saturday, 21st November, 2026 • Enugu, Nigeria
+        </div>
+
+        <div class="footer-quick-actions reveal-on-scroll delay-3">
+          <a href="#rsvp" class="btn btn-gold btn-sm">RSVP Now</a>
+          <a href="#" class="btn btn-outline-gold btn-sm btn-google-calendar" target="_blank" rel="noopener">Add to Calendar</a>
+          <button type="button" class="btn btn-purple btn-sm btn-share-invitation">Share Invitation</button>
+          <a href="https://wa.me/?text=Hello%20Chika%20%26%20Noble-Gold%2C%20congratulations%20on%20your%20forthcoming%20wedding%21" class="btn btn-outline-gold btn-sm" target="_blank" rel="noopener">Contact the Couple</a>
+        </div>
+
+        <div class="footer-copyright">
+          <p>Solemnization of Holy Matrimony & Traditional Marriage | Designed with Love for Chika Agatha & Noble-Gold Chukwubuikem</p>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /.site-content-wrapper -->
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+
+  <!-- Lightbox Modal for Gallery -->
+  <div id="gallery-lightbox" class="lightbox-modal" role="dialog" aria-modal="true">
+    <div class="lightbox-content-box">
+      <button id="lightbox-close" class="lightbox-close-btn" aria-label="Close photo viewer">&times;</button>
+      <button id="lightbox-prev" class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous photo">&#10094;</button>
+      <button id="lightbox-next" class="lightbox-nav-btn lightbox-next-btn" aria-label="Next photo">&#10095;</button>
+
+      <div class="lightbox-image-wrapper">
+        <img id="lightbox-img" src="assets/images/couple-kiss.jpg" alt="Wedding Photograph">
+      </div>
+
+      <div class="lightbox-info">
+        <h4 id="lightbox-title" class="lightbox-title">Photo Title</h4>
+        <p id="lightbox-caption" class="lightbox-caption">Photo Caption</p>
+        <div id="lightbox-counter" class="lightbox-counter">1 / 4</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RSVP Success Modal -->
+  <div id="rsvp-success-modal" class="rsvp-modal" role="dialog" aria-modal="true">
+    <div class="rsvp-modal-content">
+      <div id="confetti-container"></div>
+      <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🎉</div>
+      <h3 style="font-size: 2rem; color: var(--color-purple-deep); margin-bottom: 0.5rem;">RSVP Received!</h3>
+      <p style="font-size: 1.1rem; color: var(--color-text-main); margin-bottom: 0.8rem;">
+        Thank you, <strong id="rsvp-modal-name">Guest</strong>!
+      </p>
+      <p id="rsvp-modal-status" style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 1.8rem;">
+        We are thrilled to celebrate our special day with you.
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <a id="rsvp-whatsapp-btn" href="#" target="_blank" rel="noopener" class="btn btn-gold">
+          📲 Send RSVP via WhatsApp to the Couple
+        </a>
+        <button id="rsvp-modal-close" class="btn btn-purple" type="button">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Share Invitation Modal -->
+  <div id="share-modal" class="share-modal" role="dialog" aria-modal="true">
+    <div class="share-modal-box">
+      <button id="share-modal-close" class="lightbox-close-btn" style="top: 15px; right: 20px; color: var(--color-purple-deep);" aria-label="Close share dialog">&times;</button>
+      <div style="font-size: 2.8rem; margin-bottom: 0.4rem;">💌</div>
+      <h3 style="font-size: 1.8rem; color: var(--color-purple-deep); margin-bottom: 0.5rem;">Share the Invitation</h3>
+      <p style="font-size: 0.92rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+        Spread the joy and invite friends and family to Chika & Noble-Gold's wedding celebration.
+      </p>
+
+      <div class="share-options-list">
+        <a id="share-whatsapp-btn" href="#" target="_blank" rel="noopener" class="btn btn-gold">
+          💬 Share on WhatsApp
+        </a>
+        <button id="share-copy-link-btn" type="button" class="btn btn-purple">
+          📋 Copy Invitation Link
+        </button>
+        <p id="share-copy-status" style="font-size: 0.85rem; color: var(--color-burnt-orange); font-weight: 600; display: none;">
+          ✓ Link copied to clipboard!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/audio.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/rsvp.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

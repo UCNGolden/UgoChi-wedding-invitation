@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 40" width="300" height="40" fill="none">
+  <defs>
+    <linearGradient id="flourishGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ECC880" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#ECC880"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="80%" stop-color="#ECC880"/>
+      <stop offset="100%" stop-color="#ECC880" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M10 20 Q75 18 135 20 M165 20 Q225 18 290 20" stroke="url(#flourishGold)" stroke-width="1.5"/>
+  <circle cx="150" cy="20" r="4" fill="#D4AF37"/>
+  <circle cx="140" cy="20" r="2" fill="#ECC880"/>
+  <circle cx="160" cy="20" r="2" fill="#ECC880"/>
+  <path d="M150 12 C148 16 148 18 150 20 C152 18 152 16 150 12 Z" fill="#D4AF37"/>
+  <path d="M150 28 C148 24 148 22 150 20 C152 22 152 24 150 28 Z" fill="#D4AF37"/>
+</svg>
